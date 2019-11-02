@@ -89,7 +89,7 @@
                                     </OnPlatform>
                                 </Button.ImageSource>
                             </Button>
-                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="SOBRE NÓS" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="2" Grid.Row="1">
+                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="SOBRE NÓS" Clicked="sobre" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="2" Grid.Row="1">
                                 <Button.Image>
                                     <OnPlatform x:TypeArguments="FileImageSource">
                                         <On Platform="Android, IOS" Value="sobre.png"/>
