@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3-beta2" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
     <PackageReference Include="Xamarin.Forms.BehaviorValidationPack" Version="1.1.0" />
@@ -47,6 +48,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Paginas\Pag\Apoie.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Paginas\Pag\Dicas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Paginas\Pag\Leis.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Paginas\Pag\Sobre.xaml">

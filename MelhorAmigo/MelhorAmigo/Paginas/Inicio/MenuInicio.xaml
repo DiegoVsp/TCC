@@ -64,7 +64,7 @@
                                 </Button.ImageSource>
                             </Button>
 
-                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="DICAS" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="2" Grid.Row="0">
+                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="DICAS" Clicked="dicas" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="2" Grid.Row="0">
                                 <Button.ImageSource>
                                     <OnPlatform x:TypeArguments="FileImageSource">
                                         <On Platform="Android, IOS" Value="dicas.png"/>
@@ -73,7 +73,7 @@
                                 </Button.ImageSource>
                             </Button>
 
-                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="LEIS" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="1">
+                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="LEIS" Clicked="leis" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="1">
                                 <Button.ImageSource>
                                     <OnPlatform x:TypeArguments="FileImageSource">
                                         <On Platform="Android, IOS" Value="leis.png"/>

@@ -29,26 +29,30 @@
                         </Grid.ColumnDefinitions>
 
 
-                        <Label Text="FORMULÁRIO ADOÇÃO" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="0" FontSize="20" HorizontalOptions="Center"/>
+                        <Label Text="FORMULÁRIO ADOÇÃO" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" FontSize="20" HorizontalOptions="Center"/>
 
-                        <Entry Placeholder="NOME" x:Name="NOME" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2"/>
+                        <Entry Placeholder="NOME" x:Name="NOME" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"/>
 
 
-                        <Entry Placeholder="CEP" x:Name="CEP" Keyboard="Numeric" Grid.Column="0" Grid.Row="3">
+                        <Entry Placeholder="CEP" x:Name="CEP" Keyboard="Numeric" Grid.Column="0" Grid.Row="2">
                             <Entry.Behaviors>
                                 <behavior:MaskedBehavior Mask="XXXXX-XXX" />
                             </Entry.Behaviors>
                         </Entry>
-                        <Button Text="BUSCAR" FontSize="Small" Grid.Column="1" Grid.Row="3" HeightRequest="30"/>
+                        <Button x:Name="BOTAO" Text="BUSCAR" Clicked="BuscarCEP" FontSize="Small" Grid.Column="1" Grid.Row="2" HeightRequest="30"/>
 
 
-                        <Entry Placeholder="ENDEREÇO" x:Name="ENDERECO" Grid.Column="0" Grid.Row="4"/>
+                        <Entry Placeholder="ENDEREÇO" x:Name="ENDERECO" Grid.Column="0" Grid.Row="3"/>
 
 
-                        <Entry Placeholder="Nº" x:Name="NUMERO" Keyboard="Numeric" Grid.Column="1" Grid.Row="4"/>
+                        <Entry Placeholder="Nº" x:Name="NUMERO" Keyboard="Numeric" Grid.Column="1" Grid.Row="3"/>
 
 
-                        <Entry Placeholder="BAIRRO" x:Name="BAIRRO" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5"/>
+                        <Entry Placeholder="BAIRRO" x:Name="BAIRRO" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4"/>
+
+                        <Entry Placeholder="CIDADE" x:Name="CIDADE" Grid.Column="0" Grid.Row="5"/>
+
+                        <Entry Placeholder="UF" x:Name="UF" Grid.Column="1" Grid.Row="5"/>
 
 
                         <Entry Placeholder="(XX)XXXX-XXXX" x:Name="TELEFONE" Keyboard="Numeric" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6">
@@ -61,9 +65,7 @@
                         <Entry Placeholder="E-MAIL" x:Name="EMAIL" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"/>
 
                     </Grid>
-
-
-
+                    
                 </StackLayout>
             </ScrollView>
             <StackLayout Margin="10">

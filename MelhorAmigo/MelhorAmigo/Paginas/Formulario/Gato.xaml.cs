@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using MelhorAmigo.Modelo;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +15,22 @@ namespace MelhorAmigo.Paginas.Formulario
         public Gato()
         {
             InitializeComponent();
+            BOTAO.Clicked += BuscarCEP;
         }
+
+        private void BuscarCEP(object sender, EventArgs args)
+        {
+            string cep = CEP.Text.Trim();
+            Endereco end = ViaCep.BuscarEnderecoViaCep(cep);
+
+            ENDERECO.Text = end.logradouro;
+            BAIRRO.Text = end.bairro;
+            CEP.Text = end.cep;
+            CIDADE.Text = end.localidade;
+            UF.Text = end.uf;
+        }
+
+
         public class MaskedBehavior : Behavior<Entry>
         {
             private string _mask = "";
