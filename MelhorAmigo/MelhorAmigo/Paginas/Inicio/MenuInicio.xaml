@@ -55,7 +55,7 @@
                                 </Button.ImageSource>
                             </Button>
 
-                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="ADOTE" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="0">
+                            <Button ContentLayout="Top, 15" CornerRadius="20" Text="ADOTE" Clicked="adote" TextColor="White" FontSize="9" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="0">
                                 <Button.ImageSource>
                                     <OnPlatform x:TypeArguments="FileImageSource">
                                         <On Platform="Android, IOS" Value="adote.png"/>

@@ -22,5 +22,10 @@ namespace MelhorAmigo.Paginas.Inicio
             Navigation.PushAsync(new Pag.Apoie());
 
         }
+        private void adote(object sender, EventArgs args)
+        {
+            //App.Current.MainPage = new NavigationPage(new Pag.Adote()) { BarBackgroundColor = Color.Black };
+            Navigation.PushAsync(new Pag.Adote());
+        }
     }
 }
