@@ -27,5 +27,11 @@ namespace MelhorAmigo.Paginas.Inicio
             //App.Current.MainPage = new NavigationPage(new Pag.Adote()) { BarBackgroundColor = Color.Black };
             Navigation.PushAsync(new Pag.Adote());
         }
+
+        private void tel(object sender, EventArgs args)
+        {
+            //App.Current.MainPage = new NavigationPage(new Pag.Telefones()) { BarBackgroundColor = Color.Black };
+            Navigation.PushAsync(new Pag.Telefones());
+        }
     }
 }
