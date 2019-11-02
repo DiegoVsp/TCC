@@ -16,5 +16,11 @@ namespace MelhorAmigo.Paginas.Inicio
         {
             InitializeComponent();
         }
+        private void apoie(object sender, EventArgs args)
+        {
+            //App.Current.MainPage = new NavigationPage(new Pag.Apoie()) { BarBackgroundColor = Color.Black };
+            Navigation.PushAsync(new Pag.Apoie());
+
+        }
     }
 }
