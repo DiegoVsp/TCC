@@ -20,17 +20,129 @@ namespace MelhorAmigo.Paginas.Formulario
         }
 
 
+        private void btnEnvia(object sender, EventArgs args)
+        {
+            try
+            {
+                if (!ValidarCampos())
+                {
+
+                }
+            }
+            catch
+            {
+                if (EMAIL.Text == null)
+                {
+                    DisplayAlert("ERRO", "Preencha corretamente o campo E-MAIL", "OK");
+                }
+                if (CEP.Text == null)
+                {
+                    DisplayAlert("ERRO", "Preencha corretamente o campo CEP", "OK");
+                }
+            }
+
+
+
+
+        }
         private void BuscarCEP(object sender, EventArgs args)
         {
-            string cep = CEP.Text.Trim();
-            Endereco end = ViaCep.BuscarEnderecoViaCep(cep);
 
-            ENDERECO.Text = end.logradouro;
-            BAIRRO.Text = end.bairro;
-            CEP.Text = end.cep;
-            CIDADE.Text = end.localidade;
-            UF.Text = end.uf;
+            string cep = CEP.Text.Trim();
+
+            if (isValidCEP(cep))
+            {
+                try
+                {
+
+                    Endereco end = ViaCep.BuscarEnderecoViaCep(cep);
+
+                    if (end != null)
+                    {
+                        ENDERECO.Text = end.logradouro;
+                        BAIRRO.Text = end.bairro;
+                        CEP.Text = end.cep;
+                        CIDADE.Text = end.localidade;
+                        UF.Text = end.uf;
+                    }
+                    else
+                    {
+                        CEP.Text = "";
+                    }
+
+
+                }
+                catch (Exception e)
+                {
+                    DisplayAlert("ERRO CRÍTICO", e.Message, "OK");
+                }
+            }
+
         }
+        private bool ValidarCampos()
+        {
+            bool formatoCorreto = true;
+            if (EMAIL.Text != string.Empty)
+            {
+                if (!isValidEmail(EMAIL.Text))
+                {
+                    formatoCorreto = false;
+                    DisplayAlert("ATENÇÃO", "O E-mail informado é inválido. Por favor verifique.", "OK");
+                    EMAIL.Focus();
+                    return formatoCorreto;
+                }
+                if (CEP.Text != string.Empty)
+
+                {
+
+
+                    if (!isValidCEP(CEP.Text))
+
+                    {
+
+                        formatoCorreto = false;
+
+                        DisplayAlert("ATENÇÃO", "O CEP Informado é inválido. Por favor verifique.", "OK");
+
+                        CEP.Focus();
+                        return formatoCorreto;
+
+                    }
+
+                }
+            }
+            return formatoCorreto;
+        }
+
+        private bool isValidCEP(string cep)
+        {
+            {
+
+
+
+                if (cep.Length == 8)
+
+                {
+
+                    cep = cep.Substring(0, 5) + "-" + cep.Substring(5, 3);
+
+
+
+                    CEP.Text = cep;
+
+                }
+
+
+                return System.Text.RegularExpressions.Regex.IsMatch(cep, ("[0-9]{5}-[0-9]{3}"));
+            }
+        }
+
+        private bool isValidEmail(string email)
+        {
+
+            return System.Text.RegularExpressions.Regex.IsMatch(email, ("(?<user>[^@]+)@(?<host>.+)"));
+        }
+
 
         public class MaskedBehavior : Behavior<Entry>
         {

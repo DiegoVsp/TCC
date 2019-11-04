@@ -21,6 +21,8 @@ namespace MelhorAmigo.Modelo
 
             Endereco end = JsonConvert.DeserializeObject<Endereco>(Conteudo);
 
+            if (end.cep == null) return null;
+
             return end;
         }
     }

@@ -69,7 +69,7 @@
                 </StackLayout>
             </ScrollView>
             <StackLayout Margin="10">
-                <Button x:Name="ENVIAR" Text="Enviar" CornerRadius="15" FontSize="25" FontAttributes="Bold" TextColor="White" BackgroundColor="#d72234" WidthRequest="210"  HorizontalOptions="Center"/>
+                <Button x:Name="ENVIAR" Clicked="btnEnvia" Text="Enviar" CornerRadius="15" FontSize="25" FontAttributes="Bold" TextColor="White" BackgroundColor="#d72234" WidthRequest="210"  HorizontalOptions="Center"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
