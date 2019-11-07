@@ -48,34 +48,41 @@ namespace MelhorAmigo.Paginas.Formulario
         private void BuscarCEP(object sender, EventArgs args)
         {
 
-            string cep = CEP.Text.Trim();
-
-            if (isValidCEP(cep))
+            try
             {
-                try
+                string cep = CEP.Text.Trim();
+
+                if (isValidCEP(cep))
                 {
-
-                    Endereco end = ViaCep.BuscarEnderecoViaCep(cep);
-
-                    if (end != null)
+                    try
                     {
-                        ENDERECO.Text = end.logradouro;
-                        BAIRRO.Text = end.bairro;
-                        CEP.Text = end.cep;
-                        CIDADE.Text = end.localidade;
-                        UF.Text = end.uf;
+
+                        Endereco end = ViaCep.BuscarEnderecoViaCep(cep);
+
+                        if (end != null)
+                        {
+                            ENDERECO.Text = end.logradouro;
+                            BAIRRO.Text = end.bairro;
+                            CEP.Text = end.cep;
+                            CIDADE.Text = end.localidade;
+                            UF.Text = end.uf;
+                        }
+                        else
+                        {
+                            CEP.Text = "";
+                        }
+
+
                     }
-                    else
+                    catch (Exception e)
                     {
-                        CEP.Text = "";
+                        DisplayAlert("ERRO CRÍTICO", e.Message, "OK");
                     }
-
-
                 }
-                catch (Exception e)
-                {
-                    DisplayAlert("ERRO CRÍTICO", e.Message, "OK");
-                }
+            }
+            catch
+            {
+
             }
 
         }
