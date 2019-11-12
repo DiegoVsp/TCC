@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MelhorAmigo.DAO;
 using MelhorAmigo.Modelo;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,14 +13,53 @@ namespace MelhorAmigo.Paginas.Formulario
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Gato : ContentPage
     {
+        FirebaseHelper firebaseHelper = new FirebaseHelper();
+
+
         public Gato()
         {
             InitializeComponent();
             BOTAO.Clicked += BuscarCEP;
         }
 
-        private void btnEnvia(object sender, EventArgs args)
+
+        private async void btnEnvia(object sender, EventArgs args)
         {
+            var endereco = (new Endereco()
+            {
+                bairro     = BAIRRO.Text,
+                cep        = CEP.Text,
+                localidade = CIDADE.Text,
+                logradouro = ENDERECO.Text,
+                numero     = NUMERO.Text,
+                uf         = UF.Text
+            });
+            var pessoa = (new Pessoa()
+            {
+                Nome=NOME.Text,
+                Email=EMAIL.Text,
+                Telefone=TELEFONE.Text,
+                endereco=endereco, //envia as informações de endereço para o banco
+            });
+
+            await firebaseHelper.AddPessoa(pessoa);
+
+                NOME.Text = string.Empty;
+            CEP.Text = string.Empty;
+            ENDERECO.Text = string.Empty;
+            NUMERO.Text = string.Empty;
+            BAIRRO.Text = string.Empty;
+            CIDADE.Text = string.Empty;
+            TELEFONE.Text = string.Empty;
+            EMAIL.Text = string.Empty;
+            UF.Text = string.Empty;
+
+
+            await DisplayAlert("Sucesso", "Formulário adicionado com sucesso", "OK");
+
+
+            var allPessoas = await firebaseHelper.GetAllPessoas();
+
             try
             {
                 if (!ValidarCampos())
@@ -31,11 +71,11 @@ namespace MelhorAmigo.Paginas.Formulario
             {
                 if (EMAIL.Text == null)
                 {
-                    DisplayAlert("ERRO", "Preencha corretamente o campo E-MAIL", "OK");
+                    _ = DisplayAlert("ERRO", "Preencha corretamente o campo E-MAIL", "OK");
                 }
                 if (CEP.Text == null)
                 {
-                    DisplayAlert("ERRO", "Preencha corretamente o campo CEP", "OK");
+                    _ = DisplayAlert("ERRO", "Preencha corretamente o campo CEP", "OK");
                 }
             }
             

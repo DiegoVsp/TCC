@@ -34,7 +34,7 @@
                         <Entry Placeholder="NOME" x:Name="NOME" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"/>
 
 
-                        <Entry Placeholder="CEP" x:Name="CEP" Keyboard="Numeric" Grid.Column="0" Grid.Row="2">
+                        <Entry Placeholder="CEP" x:Name="CEP"  Keyboard="Numeric" Grid.Column="0" Grid.Row="2">
                             <Entry.Behaviors>
                                 <behavior:MaskedBehavior Mask="XXXXX-XXX" />
                             </Entry.Behaviors>

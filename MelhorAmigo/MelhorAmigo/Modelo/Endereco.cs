@@ -12,6 +12,12 @@ namespace MelhorAmigo.Modelo
         public string localidade { get; set; }
 
         public string uf { get; set; }
+        public string numero { get; set; }
+
+        public Endereco()
+        {
+
+        }
 
     }
 }

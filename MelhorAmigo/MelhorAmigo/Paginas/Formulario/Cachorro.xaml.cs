@@ -8,6 +8,7 @@ using Xamarin.Forms.Xaml;
 using MelhorAmigo.Modelo;
 
 
+
 namespace MelhorAmigo.Paginas.Formulario
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -24,6 +25,7 @@ namespace MelhorAmigo.Paginas.Formulario
         {
             try
             {
+                
                 if (!ValidarCampos())
                 {
 
