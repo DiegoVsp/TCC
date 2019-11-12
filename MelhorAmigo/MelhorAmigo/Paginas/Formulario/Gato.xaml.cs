@@ -41,7 +41,7 @@ namespace MelhorAmigo.Paginas.Formulario
                 Telefone=TELEFONE.Text,
                 endereco=endereco, //envia as informações de endereço para o banco
             });
-
+            //ok
             await firebaseHelper.AddPessoa(pessoa);
 
                 NOME.Text = string.Empty;
