@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MelhorAmigo.DAO;
 using MelhorAmigo.Modelo;
 using Xamarin.Forms;
@@ -40,6 +37,8 @@ namespace MelhorAmigo.Paginas.Formulario
                 Email=EMAIL.Text,
                 Telefone=TELEFONE.Text,
                 endereco=endereco, //envia as informações de endereço para o banco
+                data = DateTime.Now.ToString("dd/MM/yyyy HH:mm"),
+                tipo ="Gato",
                 
             });
             //
