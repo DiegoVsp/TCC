@@ -43,7 +43,7 @@
                         <Button x:Name="BOTAO" Text="BUSCAR" Clicked="BuscarCEP" FontSize="Small" Grid.Column="1" Grid.Row="2" HeightRequest="30"/>
 
 
-                        <Entry Placeholder="ENDEREÇO" x:Name="ENDERECO" Grid.Column="0" Grid.Row="3"/>
+                        <Entry Placeholder="ENDEREÇO" x:Name="LOGRADOURO" Grid.Column="0" Grid.Row="3"/>
 
 
                         <Entry Placeholder="Nº" x:Name="NUMERO" Keyboard="Numeric" Grid.Column="1" Grid.Row="3"/>
@@ -51,7 +51,7 @@
 
                         <Entry Placeholder="BAIRRO" x:Name="BAIRRO" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4"/>
 
-                        <Entry Placeholder="CIDADE" x:Name="CIDADE" Grid.Column="0" Grid.Row="5"/>
+                        <Entry Placeholder="CIDADE" x:Name="LOCALIDADE" Grid.Column="0" Grid.Row="5"/>
 
                         <Entry Placeholder="UF" x:Name="UF" Grid.Column="1" Grid.Row="5"/>
 

@@ -29,8 +29,8 @@ namespace MelhorAmigo.Paginas.Formulario
             {
                 bairro     = BAIRRO.Text,
                 cep        = CEP.Text,
-                localidade = CIDADE.Text,
-                logradouro = ENDERECO.Text,
+                localidade = LOCALIDADE.Text,
+                logradouro = LOGRADOURO.Text,
                 numero     = NUMERO.Text,
                 uf         = UF.Text
             });
@@ -40,19 +40,21 @@ namespace MelhorAmigo.Paginas.Formulario
                 Email=EMAIL.Text,
                 Telefone=TELEFONE.Text,
                 endereco=endereco, //envia as informações de endereço para o banco
+                
             });
             //
             await firebaseHelper.AddPessoa(pessoa);
 
             NOME.Text = string.Empty;
             CEP.Text = string.Empty;
-            ENDERECO.Text = string.Empty;
+            LOGRADOURO.Text = string.Empty;
             NUMERO.Text = string.Empty;
             BAIRRO.Text = string.Empty;
-            CIDADE.Text = string.Empty;
+            LOCALIDADE.Text = string.Empty;
             TELEFONE.Text = string.Empty;
             EMAIL.Text = string.Empty;
             UF.Text = string.Empty;
+            
 
 
             await DisplayAlert("Sucesso", "Formulário adicionado com sucesso", "OK");
@@ -78,10 +80,6 @@ namespace MelhorAmigo.Paginas.Formulario
                     _ = DisplayAlert("ERRO", "Preencha corretamente o campo CEP", "OK");
                 }
             }
-            
-
-            
-            
         }
         private void BuscarCEP(object sender, EventArgs args)
         {
@@ -99,10 +97,10 @@ namespace MelhorAmigo.Paginas.Formulario
 
                         if (end != null)
                         {
-                            ENDERECO.Text = end.logradouro;
+                            LOGRADOURO.Text = end.logradouro;
                             BAIRRO.Text = end.bairro;
                             CEP.Text = end.cep;
-                            CIDADE.Text = end.localidade;
+                            LOCALIDADE.Text = end.localidade;
                             UF.Text = end.uf;
                         }
                         else
