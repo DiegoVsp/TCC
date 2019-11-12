@@ -44,7 +44,7 @@ namespace MelhorAmigo.Paginas.Formulario
             //
             await firebaseHelper.AddPessoa(pessoa);
 
-                NOME.Text = string.Empty;
+            NOME.Text = string.Empty;
             CEP.Text = string.Empty;
             ENDERECO.Text = string.Empty;
             NUMERO.Text = string.Empty;
