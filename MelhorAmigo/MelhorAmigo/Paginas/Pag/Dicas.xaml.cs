@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MelhorAmigo.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,14 @@ namespace MelhorAmigo.Paginas.Pag
         public Dicas()
         {
             InitializeComponent();
+            List<dica> Dica = new List<dica>();
+            Dica.Add(new dica() { nome = "Castração", info ="veja os cuidados pós castração" });
+            Dica.Add(new dica() { nome = "Dica 2" });
+            Dica.Add(new dica() { nome = "Dica 3" });
+            Dica.Add(new dica() { nome = "Dica 4" });
+            Dica.Add(new dica() { nome = "Dica 5" });
+
+            ListaDicas.ItemsSource = Dica;
         }
     }
 }

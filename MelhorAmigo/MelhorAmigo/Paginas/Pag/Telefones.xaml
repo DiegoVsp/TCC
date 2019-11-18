@@ -14,7 +14,7 @@
                     <ViewCell>
                         <StackLayout Margin="20">
                             <StackLayout Orientation="Vertical" Margin="10">
-                                <Label Text="{Binding Nome}" Margin="0" FontAttributes="Bold" FontSize="20" TextColor="#d72234"/>
+                                <Label Text="{Binding Nome}" Margin="0" FontAttributes="Bold" FontSize="18" TextColor="#d72234"/>
                                 <Label Text="{Binding Phone}" Margin="0" FontSize="15" TextColor="Black"/>
                             </StackLayout>
                         </StackLayout>

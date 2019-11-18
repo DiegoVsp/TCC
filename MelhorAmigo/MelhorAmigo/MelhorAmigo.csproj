@@ -64,4 +64,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Paginas\Laws\" />
+    <Folder Include="Paginas\Tips\" />
+  </ItemGroup>
 </Project>
