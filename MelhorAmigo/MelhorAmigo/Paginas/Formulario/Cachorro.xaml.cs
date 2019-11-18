@@ -38,7 +38,7 @@ namespace MelhorAmigo.Paginas.Formulario
                 Email = EMAIL.Text,
                 Telefone = TELEFONE.Text,
                 endereco = endereco, //envia as informações de endereço para o banco
-                data =DateTime.Now.ToString("dd/MM/yyyy HH:mm"),
+                Data =DateTime.Now,
                 tipo = "Cachorro",
 
             });

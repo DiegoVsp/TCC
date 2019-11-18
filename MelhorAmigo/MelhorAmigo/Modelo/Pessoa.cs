@@ -15,7 +15,7 @@ namespace MelhorAmigo.Modelo
         
         public string Email { get; set; }
 
-        public string data { get;set; }
+        public DateTime Data { get; set; }
 
         public Endereco endereco { get; set; }
 

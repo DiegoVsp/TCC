@@ -22,6 +22,7 @@ namespace MelhorAmigo.Paginas.Formulario
 
         private async void btnEnvia(object sender, EventArgs args)
         {
+           
             var endereco = (new Endereco()
             {
                 bairro     = BAIRRO.Text,
@@ -37,11 +38,11 @@ namespace MelhorAmigo.Paginas.Formulario
                 Email=EMAIL.Text,
                 Telefone=TELEFONE.Text,
                 endereco=endereco, //envia as informações de endereço para o banco
-                data = DateTime.Now.ToString("dd/MM/yyyy HH:mm"),
+                Data = DateTime.Now,
                 tipo ="Gato",
                 
             });
-            //
+            
             await firebaseHelper.AddPessoa(pessoa);
 
             NOME.Text = string.Empty;
