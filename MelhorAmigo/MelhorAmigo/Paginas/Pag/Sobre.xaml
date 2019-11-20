@@ -13,7 +13,7 @@
                 <StackLayout BackgroundColor="White" Spacing="0">
 
                     <StackLayout Padding="0" BackgroundColor="White">
-                        <Image HeightRequest="190">
+                        <Image HeightRequest="180">
                             <Image.Source>
                                 <OnPlatform x:TypeArguments="ImageSource">
                                     <On Platform="Android, IOS" Value="logo2.jpeg"/>
@@ -25,7 +25,7 @@
 
 
 
-                    <StackLayout BackgroundColor="White" Padding="25" Margin="18,0,18,0">
+                    <StackLayout BackgroundColor="White" Padding="20" Margin="18,0,18,0">
                         <StackLayout HorizontalOptions="Center">
 
                             <Label Text="Nossa proposta consiste em MINIMIZAR o sofrimento de animais carentes em abandono ou em situação de risco. Assumimos os gastos financeiros para que eles recebam atendimento veterinário ( consultas, exames, cirurgias, tratamentos), ração, transporte e hospedagem. Levamos remédios e atendimento de higiene a animais de bairros periféricos da cidade de Araraquara. E promovemos a CONSCIENTIZAÇÃO E MUDANÇA DE ATITUDES da população para que a importância da Castração, a Guarda Responsável e os DIREITOS DOS ANIMAIS estejam presentes no dia a dia de todos nós."                   
