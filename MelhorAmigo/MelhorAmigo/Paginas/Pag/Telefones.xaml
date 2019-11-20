@@ -5,24 +5,39 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MelhorAmigo.Paginas.Pag.Telefones"
+             BackgroundColor="White"
              Title="TELEFONES">
     <ContentPage.Content>
+        <StackLayout BackgroundColor="White" VerticalOptions="Center">
+            <ScrollView>
+                <StackLayout BackgroundColor="White" Padding="0" Spacing="0">
+                    <StackLayout Padding="0" BackgroundColor="White">
+                        <Image HeightRequest="160" Margin="0,0,0,-15">
+                            <Image.Source>
+                                <OnPlatform x:TypeArguments="ImageSource">
+                                    <On Platform="Android, IOS" Value="logoTel.jpeg"/>
+                                    <On Platform="UWP" Value="Resources/logoTel.jpeg"/>
+                                </OnPlatform>
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                    <ListView x:Name="ListaTelefones" HasUnevenRows="True" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Margin="20">
+                                        <StackLayout Orientation="Vertical" Margin="10">
+                                            <Label Text="{Binding Nome}" Margin="0" FontAttributes="Bold" FontSize="18" TextColor="#d72234"/>
+                                            <Label Text="{Binding Phone}" Margin="0" FontSize="15" TextColor="Black"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
 
-        <ListView x:Name="ListaTelefones" HasUnevenRows="True" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Margin="20">
-                            <StackLayout Orientation="Vertical" Margin="10">
-                                <Label Text="{Binding Nome}" Margin="0" FontAttributes="Bold" FontSize="18" TextColor="#d72234"/>
-                                <Label Text="{Binding Phone}" Margin="0" FontSize="15" TextColor="Black"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-
-        </ListView>
-
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
