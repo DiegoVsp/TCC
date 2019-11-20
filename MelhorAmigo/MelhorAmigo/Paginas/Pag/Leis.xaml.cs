@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MelhorAmigo.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,15 @@ namespace MelhorAmigo.Paginas.Pag
         public Leis()
         {
             InitializeComponent();
+            List<Lei> ListaLei = new List<Lei>();
+            ListaLei.Add(new Lei() { nome = "Lei 1", info = "lei dos animais" });
+            ListaLei.Add(new Lei() { nome = "Lei 2" });
+            ListaLei.Add(new Lei() { nome = "Lei 3" });
+            ListaLei.Add(new Lei() { nome = "Lei 4" });
+            ListaLei.Add(new Lei() { nome = "Lei 5" });
+
+            ListaLeis.ItemsSource = ListaLei;
+
         }
     }
 }
