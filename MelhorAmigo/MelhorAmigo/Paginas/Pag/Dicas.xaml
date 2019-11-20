@@ -4,21 +4,53 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="DICAS"
+             BackgroundColor="White"
              x:Class="MelhorAmigo.Paginas.Pag.Dicas">
     <ContentPage.Content>
-        <ListView x:Name="ListaDicas" HasUnevenRows="True" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Margin="20">
-                            <StackLayout Orientation="Vertical" Margin="10">
-                                <Label Text="{Binding nome}" Margin="0" FontAttributes="Bold" FontSize="18" TextColor="#d72234"/>
-                                <Label Text="{Binding info}" Margin="0" FontSize="14" TextColor="Black"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout VerticalOptions="Center" Padding="0" Spacing="0">
+
+                    <StackLayout Padding="0,10,0,10" BackgroundColor="White">
+                        <Image HeightRequest="180">
+                            <Image.Source>
+                                <OnPlatform x:TypeArguments="ImageSource">
+                                    <On Platform="Android, IOS" Value="logoDica.jpeg"/>
+                                    <On Platform="UWP" Value="Resources/logoDica.jpeg"/>
+                                </OnPlatform>
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+
+                    <StackLayout Padding="10" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                        <Grid RowSpacing="15" ColumnSpacing="15" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="140"/>
+                                <ColumnDefinition Width="140"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button CornerRadius="15" Text="CASTRAÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="0"/>
+                            <Button CornerRadius="15" Text="DOAÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="0"/>
+                            <Button CornerRadius="15" Text="VACINAÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="1"/>
+                            <Button CornerRadius="15" Text="DENÚNCIAS" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="1"/>
+                            <Button CornerRadius="15" Text="CHIPAGEM" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="2"/>
+                            <Button CornerRadius="15" Text="PERDIDOS" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="2"/>
+                            <Button CornerRadius="15" Text="ADOÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="3"/>
+                            <Button CornerRadius="15" Text="COMO AJUDAR" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="3"/>
+                        </Grid>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
