@@ -33,7 +33,7 @@
                                     </StackLayout>
                                 </ViewCell>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
+                        </ListView.ItemTemplate> 
 
                     </ListView>
                 </StackLayout>
