@@ -38,14 +38,12 @@
                                 <ColumnDefinition Width="140"/>
                             </Grid.ColumnDefinitions>
 
-                            <Button CornerRadius="15" Text="CASTRAÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="0"/>
-                            <Button CornerRadius="15" Text="DOAÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="0"/>
-                            <Button CornerRadius="15" Text="VACINAÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="1"/>
-                            <Button CornerRadius="15" Text="DENÚNCIAS" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="1"/>
-                            <Button CornerRadius="15" Text="CHIPAGEM" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="2"/>
-                            <Button CornerRadius="15" Text="PERDIDOS" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="2"/>
-                            <Button CornerRadius="15" Text="ADOÇÃO" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="3"/>
-                            <Button CornerRadius="15" Text="COMO AJUDAR" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="3"/>
+                            <Button CornerRadius="15" Text="CASTRAÇÃO" Clicked="castracao" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="0"/>
+                            <Button CornerRadius="15" Text="VACINAÇÃO" Clicked="vacinacao" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="0"/>
+                            <Button CornerRadius="15" Text="CHIPAGEM"  Clicked="chipagem"  TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="1"/>
+                            <Button CornerRadius="15" Text="ADOÇÃO"    Clicked="adocao"    TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="1"/>
+                            <Button CornerRadius="15" Text="DOAÇÃO"    Clicked="doacao"    TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="0" Grid.Row="2"/>
+                            <Button CornerRadius="15" Text="DENÚNCIAS" Clicked="denuncias" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#d72234" Grid.Column="1" Grid.Row="2"/>                            
                         </Grid>
                     </StackLayout>
 
