@@ -9,8 +9,19 @@
         <StackLayout Margin="5,5,5,10" Padding="0,0,0,10">
             <ScrollView>
                 <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
-                    <StackLayout Margin="2">
-                        <Label />
+                    <StackLayout>
+                        <Label Text="Quais são as vacinas necessárias para meu animal?"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="As vacinas que devem constar obrigatoriamente no calendário de vacinação do seu cachorro são as vacinas múltiplas ou polivalentes, v8 e v10, e a vacina anti-rábica. As vacinas v8 e v10 protegem os cães de sete doenças consideradas graves: cinomose , hepatite infecciosa canina, parvovirose, leptospirose, adenovirose, coronavirose e parainfluenza canina. Já a vacina anti-rábica protege os cães contra a raiva. Algumas dessas doenças são consideradas zoonoses, ou seja, podem ser transmitadas para o homem."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Além das vacinas v8 e v10 e da antirrábica existem outras doses de imunização que também são importantes. É o caso das vacinas contra a leishmaniose, a giárdia, a tosse dos cães e pulgas. Vale lembrar que a aplicação ou não e a organização dessas vacinas estará no calendário de vacinação do seu cachorro, feito por um médico veterinário."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
                     </StackLayout>
                 </Frame>
             </ScrollView>

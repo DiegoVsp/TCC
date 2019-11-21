@@ -10,7 +10,38 @@
             <ScrollView>
                 <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
                     <StackLayout Margin="2">
-                        <Label />
+                        <Label Text="O que é o microchip e para que serve?"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="O microchip ou micro-circuito eletrônico é constituído de um código exclusivo e inalterável, encapsulado em vidro cirúrgico e revestido de uma substância biocompatível para uso em animais. É chamado de microchip, pois o menor deles é do tamanho de um grão de arroz."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Existe um número para cadastro em banco de dados que armazenam os dados do animal, como nome e pedigree e do seu responsável como o endereço e contato. Implantado através de uma injeção no dorso do animal sob a pele, o processo é indolor. Pode ser lido somente por aparelhos leitores de microchip. "
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        
+                        <Label Text="Microchip tem validade?"
+                                VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="Por não possuir nenhum tipo de bateria, o microchip fica inativo sob a pele do animal sendo energizado apenas pelo leitor de microchip quando esse lê o número. Por ser de biovidro, sua durabilidade é estimada em 100 anos por isso dura toda a vida do pet. "
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        
+                        <Label Text="Qualquer Pet pode ser microchipado?"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="Sim. Não há restrição de nenhum tipo: raça, peso, idade. É aconselhável que o animal seja microchipado após dois meses mas, a partir do 10º dia do animal já é possível a implantação. "
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
                     </StackLayout>
                 </Frame>
             </ScrollView>

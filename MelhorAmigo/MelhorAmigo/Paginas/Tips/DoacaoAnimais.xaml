@@ -10,7 +10,49 @@
             <ScrollView>
                 <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
                     <StackLayout Margin="2">
-                        <Label />
+                        <Label Text="Posso doar um animal para o SOS Melhor Amigo?"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="Não. Nós não assumimos animais que não sejam aqueles que resgatamos de maus tratos ou do abandono, todos em situação de alto risco. Não possuímos canil e só assumimos animais que temos condições de tratar."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Porém, você pode entrar em contato com a Secretaria do Meio Ambiente pelo telefone (16) 3301-1800 para levar para adoção o animal que você não tem condições de cuidá-lo."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+
+                        <Label Text="Vou me mudar para um apartamento. E agora?"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="Se você precisa doar um animal que já conviveu com você, pense bem. Os animais são seres sencientes. Isso significa que eles têm condições de perceber o que acontece e sofrerão muito com o distanciamento da família na qual foram criados.  "
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Hoje a legislação protege quem quiser ter até dois cães em apartamento. Informe-se! Muitas vezes a mudança de rotina de passeios, para quem vai mudar de casa para apartamento é menos traumatizante do que se desfazer do seu animal porque vai mudar de endereço. " 
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Mas, se mesmo assim, você decidir doar seu animal, doe sempre castrado e com as vacinas em dia. "
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Quero doar meu animal para outra pessoa. O que devo fazer?"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="LEMBRE-SE: O FUTURO DE UM ANIMAL QUE JÁ FOI SEU TAMBÉM É SUA RESPONSABILIDADE."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8"
+                               FontAttributes="Bold"
+                               FontSize="18"/>
+                        <Label Text="Amor é essencial, porém não é suficiente! Por isso, verifique se a pessoa interessada em adotar tem condições financeiras de levar ao veterinário, proporcionar tratamento, dar boa ração, cuidados de higiene e socorrer em caso de urgência."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Escolha sem presa e, periodicamente, acompanhe a adoção. Quanto menos pressa para doar, melhor será o adotante. Acredite nisso!"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        
                     </StackLayout>
                 </Frame>
             </ScrollView>

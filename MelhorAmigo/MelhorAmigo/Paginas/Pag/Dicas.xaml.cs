@@ -38,6 +38,7 @@ namespace MelhorAmigo.Paginas.Pag
         }
         private void denuncias(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new Tips.Denuncias()); 
+            Navigation.PushAsync(new Tips.Denuncias());
+        }
     }
 }

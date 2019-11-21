@@ -10,7 +10,74 @@
             <ScrollView>
                 <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
                     <StackLayout Margin="2">
-                        <Label />
+                        <Label Text="O que são considerados maus tratos?"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="15"/>
+                        <Label Text="- Abandonar, espancar, golpear, mutilar e envenenar;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Manter preso permanentemente em correntes;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Manter em locais pequenos e anti-higiênico;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Não abrigar do sol, da chuva e do frio;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Deixar sem ventilação ou luz solar;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Não dar água e comida diariamente;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Negar assistência veterinária ao animal doente ou ferido;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Obrigar a trabalho excessivo ou superior a sua força;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Capturar animais silvestres; "
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Utilizar animal em shows que possam lhe causar pânico ou estresse;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="- Promover violência como rinhas de galo, farra-do-boi etc.."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="Outros exemplos estão descritos no Decreto Lei 24.645/1934, de Getúlio Vargas."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" />
+                        <Label Text="Lei Federal 9.605/98 - dos Crimes Ambientais"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="Red"/>
+                        <Label Text="Art. 32º Praticar ato de abuso, maus-tratos, ferir ou mutilar animais silvestres, domésticos ou domesticados, nativos ou exóticos:"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" 
+                               FontSize="15"
+                               FontAttributes="Bold"/>
+                        <Label Text="Pena: detenção, de três meses a um ano, e multa."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6"
+                               FontSize="15"
+                               FontAttributes="Bold"/>
+                        <Label Text="§ 1º Incorre nas mesmas penas quem realiza experiência dolorosa ou cruel em animal vivo, ainda que para fins didáticos ou científicos, quando existirem recursos alternativos."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" 
+                               FontSize="15"
+                               FontAttributes="Bold"/>
+                        <Label Text="§ 2º A pena é aumentada de um sexto a um terço, se ocorre morte do animal."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.6" 
+                               FontSize="15"
+                               FontAttributes="Bold"/>
                     </StackLayout>
                 </Frame>
             </ScrollView>

@@ -10,7 +10,22 @@
             <ScrollView>
                 <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
                     <StackLayout Margin="2">
-                        <Label />
+                        <Label Text="O que preciso fazer para adotar um animal?" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="São vários os aspectos que devem ser considerados quando se pensa em adotar um animal. Primeiro, pense se você tem condições de adotá-lo."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="Feito isso, em Araraquara-SP você poderá visitar as Feirinhas de Adoção realizadas pela Prefeitura no Espaço Cão Gabriel, no Parque Infantil. Geralmente, funcionam em sábados alternados, das 9h30 às 13h30. Para adotar fora da Feira, ligue na Secretaria do Meio Ambiente pelo telefone (16) 3301-1800."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="O interessado deverá ter mais de 18 anos, passar por entrevista, apresentar RG e CPF e assinar o Termo de Responsabilidade."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8"
+                               FontAttributes="Bold"/>
                     </StackLayout>
                 </Frame>
             </ScrollView>
