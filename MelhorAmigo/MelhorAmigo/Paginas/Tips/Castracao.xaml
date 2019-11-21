@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MelhorAmigo.Paginas.Tips.Castracao">
+    <ContentPage.Content>
+        <StackLayout Margin="5,5,5,10" Padding="0,0,0,10">
+            <ScrollView>
+                <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
+                    <StackLayout>
+                        <Label Text="O que é castração?"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="A castração consiste em uma cirurgia feita em cães e gatos, fêmeas e machos, para impedir que se reproduzam sem controle. Para cada bebê que nasce, 15 cães e 45 gatos também podem nascer. Em seis anos, uma cadela e seus descendentes podem gerar 64 mil filhotes! Isso explica o grave problema da superpopulação desses animais, com a morte de milhares deles, e que muitas vezes pode ser evitado por meio da informação. "
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+
+                        <Label Text="Como funciona?"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="Nas fêmeas, consiste na retirada do útero, trompas e ovários. Nos machos, a retirada dos testículos."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="A cirugia é feita com anestesia geral, é simples mas deve ser executada apenas por veterinários devidamente habilitados para tal. O animal não precisa ficar internado e, em torno de uma semana estará totalemnte recuperado."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8"/>
+                        <Label Text="A castração pode ser feita a partir dos 2 meses de idade e, no caso da fêmea, recomenda-se antes do primeiro cio."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+
+
+                        <Label Text="Por que devo castrar meu animal? "
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="A castração é um ato de amor e responsabilidade. Existe uma superlotação de cães e gatos nos grandes centros urbanos, fazendo com que muitos animais vivam em péssimas condições nas ruas ou passem suas vidas em abrigos, à procura de um lar. A castração, principalmente de animais em situação de rua, ajudaria a solucionar esse problema."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+
+                        <Label Text="Vantagens da castração:"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="16"/>
+                        <Label Text="1. Diminui drasticamente o risco de doenças nas vias uterinas e, principalmente, do câncer de mama, útero, próstata e testículos;"                        
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="2. Elimina a Gravidez Psicológica, estado presente em algumas fêmeas após o término do cio, o que ocasiona aumento das mamas (muitas vezes com edema) com produção de leite e irritabilidade excessiva;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="3. Elimina o risco do câncer dos órgão genitais;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="4. Diminui o risco das fugas e brigas, que podem acarretar acidentes graves e até fatais;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="5. Acaba com os latidos, uivos e miados excessivos que ocorrem por ocasião do cio;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="6. Elimina os estados de excitação por falta de cruzamentos - e o embaraço gerado com as visitas!;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="7. Nas cadelas, elimina a inconveniente perda de sangue no período de cio, assim como as desagradáveis reuniões de machos na porta de sua residência;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+                        <Label Text="8. Diminuiu o hábito dos gatos de urinar em paredes e móveis para marcar território. A urina também perde o odor forte e desagradável."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

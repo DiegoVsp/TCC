@@ -16,5 +16,29 @@ namespace MelhorAmigo.Paginas.Pag
         {
             InitializeComponent();
         }
+        private void castracao(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Tips.Castracao());
+        }
+        private void vacinacao(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Tips.Vacinacao());
+        }
+        private void chipagem(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Tips.Chipagem());
+        }
+        private void adocao(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Tips.Adocao());
+        }
+        private void doacao(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Tips.DoacaoAnimais());
+        }
+        private void denuncias(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Tips.Denuncias());
+        }
     }
 }
