@@ -10,7 +10,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White" VerticalOptions="Center">
             <ScrollView>
-                <StackLayout BackgroundColor="White" Padding="0" Spacing="0">
+                <StackLayout VerticalOptions="Center" BackgroundColor="White" Padding="0" Spacing="0">
                     <StackLayout Padding="0" BackgroundColor="White">
                         <Image HeightRequest="160" Margin="0,0,0,-15">
                             <Image.Source>

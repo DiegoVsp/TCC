@@ -142,6 +142,7 @@
     <Content Include="Resources\logo.jpg" />
     <Content Include="Resources\logo2.jpeg" />
     <Content Include="Resources\logoDica.jpeg" />
+    <Content Include="Resources\logoLeis.jpeg" />
     <Content Include="Resources\logoTel.jpeg" />
     <Content Include="Resources\sobre.png" />
     <Content Include="Resources\telefones.png" />

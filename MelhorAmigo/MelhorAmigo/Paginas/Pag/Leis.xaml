@@ -6,19 +6,36 @@
              mc:Ignorable="d"
              x:Class="MelhorAmigo.Paginas.Pag.Leis">
     <ContentPage.Content>
-        <ListView x:Name="ListaLeis" HasUnevenRows="True" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Margin="20">
-                            <StackLayout Orientation="Vertical" Margin="10">
-                                <Label Text="{Binding nome}" Margin="0" FontAttributes="Bold" FontSize="18" TextColor="#d72234"/>
-                                <Label Text="{Binding info}" Margin="0" FontSize="14" TextColor="Black"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <StackLayout BackgroundColor="White" VerticalOptions="Center">
+            <ScrollView>
+                <StackLayout VerticalOptions="Center" BackgroundColor="White" Padding="0" Spacing="0">
+                    <StackLayout Padding="0" BackgroundColor="White">
+                        <Image HeightRequest="160" Margin="0,2,0,-15">
+                            <Image.Source>
+                                <OnPlatform x:TypeArguments="ImageSource">
+                                    <On Platform="Android, IOS" Value="logoLeis.jpeg"/>
+                                    <On Platform="UWP" Value="Resources/logoLeis.jpeg"/>
+                                </OnPlatform>
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+
+                    <ListView x:Name="ListaLeis" HasUnevenRows="True" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Margin="20">
+                                        <StackLayout Orientation="Vertical" Margin="10">
+                                            <Label Text="{Binding nome}" Margin="0" FontAttributes="Bold" FontSize="18" TextColor="#d72234"/>
+                                            <Label Text="{Binding info}" Margin="0" FontSize="14" TextColor="Black"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

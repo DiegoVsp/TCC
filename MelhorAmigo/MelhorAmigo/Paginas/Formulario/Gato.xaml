@@ -11,66 +11,71 @@
     <ContentPage.Content>
         <StackLayout>
             <ScrollView>
-                <StackLayout Margin="20">
-                    <Grid BackgroundColor="White" RowSpacing="10" ColumnSpacing="10" HorizontalOptions="Center" VerticalOptions="Center">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
+                <StackLayout>
+                    <Frame CornerRadius="5" Margin="10,10,10,10" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
+                        <StackLayout Margin="2">
+                            <Grid BackgroundColor="White" RowSpacing="10" ColumnSpacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="80"/>
-                        </Grid.ColumnDefinitions>
-
-
-                        <Label Text="FORMULÁRIO ADOÇÃO" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" FontSize="20" HorizontalOptions="Center"/>
-
-                        <Entry Placeholder="NOME" x:Name="NOME" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
 
 
-                        <Entry Placeholder="CEP" x:Name="CEP"  Keyboard="Numeric" Grid.Column="0" Grid.Row="2">
-                            <Entry.Behaviors>
-                                <behavior:MaskedBehavior Mask="XXXXX-XXX" />
-                            </Entry.Behaviors>
-                        </Entry>
-                        <Button x:Name="BOTAO" Text="BUSCAR" Clicked="BuscarCEP" FontSize="Small" Grid.Column="1" Grid.Row="2" HeightRequest="30"/>
+                                <Label Text="FORMULÁRIO ADOÇÃO" Grid.ColumnSpan="2" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" FontSize="20" HorizontalOptions="Center"/>
+
+                                <Entry Placeholder="NOME" x:Name="NOME" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"/>
 
 
-                        <Entry Placeholder="ENDEREÇO" x:Name="LOGRADOURO" Grid.Column="0" Grid.Row="3"/>
+                                <Entry Placeholder="CEP" x:Name="CEP"  Keyboard="Numeric" Grid.Column="0" Grid.Row="2">
+                                    <Entry.Behaviors>
+                                        <behavior:MaskedBehavior Mask="XXXXX-XXX" />
+                                    </Entry.Behaviors>
+                                </Entry>
+                                <Button x:Name="BOTAO" Text="BUSCAR" Clicked="BuscarCEP" FontSize="Small" Grid.Column="1" Grid.Row="2" HeightRequest="30"/>
 
 
-                        <Entry Placeholder="Nº" x:Name="NUMERO" Keyboard="Numeric" Grid.Column="1" Grid.Row="3"/>
+                                <Entry Placeholder="ENDEREÇO" x:Name="LOGRADOURO" Grid.Column="0" Grid.Row="3"/>
 
 
-                        <Entry Placeholder="BAIRRO" x:Name="BAIRRO" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4"/>
-
-                        <Entry Placeholder="CIDADE" x:Name="LOCALIDADE" Grid.Column="0" Grid.Row="5"/>
-
-                        <Entry Placeholder="UF" x:Name="UF" Grid.Column="1" Grid.Row="5"/>
+                                <Entry Placeholder="Nº" x:Name="NUMERO" Keyboard="Numeric" Grid.Column="1" Grid.Row="3"/>
 
 
-                        <Entry Placeholder="(XX)XXXX-XXXX" x:Name="TELEFONE" Keyboard="Numeric" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6">
-                            <Entry.Behaviors>
-                                <behavior:MaskedBehavior Mask="(XX) XXXX-XXXX" />
-                            </Entry.Behaviors>
-                        </Entry>
+                                <Entry Placeholder="BAIRRO" x:Name="BAIRRO" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4"/>
+
+                                <Entry Placeholder="CIDADE" x:Name="LOCALIDADE" Grid.Column="0" Grid.Row="5"/>
+
+                                <Entry Placeholder="UF" x:Name="UF" Grid.Column="1" Grid.Row="5"/>
 
 
-                        <Entry Placeholder="E-MAIL" x:Name="EMAIL" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"/>
+                                <Entry Placeholder="(XX)XXXX-XXXX" x:Name="TELEFONE" Keyboard="Numeric" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6">
+                                    <Entry.Behaviors>
+                                        <behavior:MaskedBehavior Mask="(XX) XXXX-XXXX" />
+                                    </Entry.Behaviors>
+                                </Entry>
 
-                    </Grid>
-                    
+
+                                <Entry Placeholder="E-MAIL" x:Name="EMAIL" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"/>
+
+                            </Grid>
+
+                        </StackLayout>
+                    </Frame>
+                    <StackLayout Margin="0">
+                        <Button x:Name="ENVIAR" Clicked="btnEnvia" Text="Enviar" CornerRadius="15" FontSize="25" FontAttributes="Bold" TextColor="White" BackgroundColor="#d72234" WidthRequest="210"  HorizontalOptions="Center"/>
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
-            <StackLayout Margin="10">
-                <Button x:Name="ENVIAR" Clicked="btnEnvia" Text="Enviar" CornerRadius="15" FontSize="25" FontAttributes="Bold" TextColor="White" BackgroundColor="#d72234" WidthRequest="210"  HorizontalOptions="Center"/>
-            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

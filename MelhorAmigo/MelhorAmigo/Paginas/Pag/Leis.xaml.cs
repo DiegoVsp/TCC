@@ -17,11 +17,11 @@ namespace MelhorAmigo.Paginas.Pag
         {
             InitializeComponent();
             List<Lei> ListaLei = new List<Lei>();
-            ListaLei.Add(new Lei() { nome = "Lei 1", info = "lei dos animais" });
-            ListaLei.Add(new Lei() { nome = "Lei 2" });
-            ListaLei.Add(new Lei() { nome = "Lei 3" });
-            ListaLei.Add(new Lei() { nome = "Lei 4" });
-            ListaLei.Add(new Lei() { nome = "Lei 5" });
+            ListaLei.Add(new Lei() { nome = "LEI COMPLEMENTAR Nº827/12", info = "Política municipal de proteção aos animais" });
+            ListaLei.Add(new Lei() { nome = "LEI MUNICIPAL Nº8.716/16", info = "Regulamenta os eventos de adoção de animais domésticos " });
+            ListaLei.Add(new Lei() { nome = "LEI COMPLEMENTAR Nº 896/18", info = "Medidas confinamento de animais" });
+            ListaLei.Add(new Lei() { nome = "LEI ORDINÁRIA Nº7929/13", info="Criação do fundo municipal de Proteção à fauna" });
+            ListaLei.Add(new Lei() { nome = "Lei 5", info = "" });
 
             ListaLeis.ItemsSource = ListaLei;
 

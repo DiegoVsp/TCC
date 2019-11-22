@@ -4,13 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="SOBRE"
-             BackgroundColor="White"
+             Title="SOBRE"             
              x:Class="MelhorAmigo.Paginas.Pag.Sobre">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
             <ScrollView>
-                <StackLayout BackgroundColor="White" Spacing="0">
+                <StackLayout Margin="5,5,5,10" Padding="0,0,0,10">
 
                     <StackLayout Padding="0" BackgroundColor="White">
                         <Image HeightRequest="180">
@@ -25,20 +24,16 @@
 
 
 
-                    <StackLayout BackgroundColor="White" Padding="20" Margin="18,0,18,0">
-                        <StackLayout HorizontalOptions="Center">
+                    <StackLayout>
+                        <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
+                            <StackLayout HorizontalOptions="Center">
 
-                            <Label Text="Nossa proposta consiste em MINIMIZAR o sofrimento de animais carentes em abandono ou em situação de risco. Assumimos os gastos financeiros para que eles recebam atendimento veterinário ( consultas, exames, cirurgias, tratamentos), ração, transporte e hospedagem. Levamos remédios e atendimento de higiene a animais de bairros periféricos da cidade de Araraquara. E promovemos a CONSCIENTIZAÇÃO E MUDANÇA DE ATITUDES da população para que a importância da Castração, a Guarda Responsável e os DIREITOS DOS ANIMAIS estejam presentes no dia a dia de todos nós."                   
-                   FontAttributes="Bold"
-                   LineBreakMode="WordWrap"
-                   
-                   
-                   BackgroundColor="White"
-                   TextColor="Black"           
-                   FontSize="15"  
-                    
-                />
-                        </StackLayout>
+                                <Label Text="Nossa proposta consiste em MINIMIZAR o sofrimento de animais carentes em abandono ou em situação de risco. Assumimos os gastos financeiros para que eles recebam atendimento veterinário ( consultas, exames, cirurgias, tratamentos), ração, transporte e hospedagem. Levamos remédios e atendimento de higiene a animais de bairros periféricos da cidade de Araraquara. E promovemos a CONSCIENTIZAÇÃO E MUDANÇA DE ATITUDES da população para que a importância da Castração, a Guarda Responsável e os DIREITOS DOS ANIMAIS estejam presentes no dia a dia de todos nós."                   
+                                       LineBreakMode="WordWrap"
+                                       LineHeight="1.8" />
+
+                            </StackLayout>
+                        </Frame>
                     </StackLayout>
 
                     <StackLayout Margin="15,20,15,15" >
