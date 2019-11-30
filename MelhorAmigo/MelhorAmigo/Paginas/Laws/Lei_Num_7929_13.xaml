@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="LEI Nº 7929/13"
+             x:Class="MelhorAmigo.Paginas.Laws.Lei_Num_7929_13">
+    <ContentPage.Content>
+        <StackLayout Margin="5,5,5,10" Padding="0,0,0,10">
+            <ScrollView>
+                <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
+                    <StackLayout Margin="2">
+                        <Label Text="LEI ORDINÁRIA 7929 2013 DE ARARAQUARA SP" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+                        <Label Text="www.LeisMunicipais.com.br" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="14"/>
+                        <Label Text="LEI Nº 7929, DE 29 DE ABRIL DE 2013" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+                        
+                        <Label Text="DISPÕE SOBRE A CRIAÇÃO DO FUNDO MUNICIPAL DE PROTEÇÃO À FAUNA, E DÁ OUTRAS PROVIDÊNCIAS.O Prefeito do Município de Araraquara, Estado de São Paulo, no exercício de suas atribuições legais, e de acordo com que aprovou a Câmara Municipal, em sessão ordinária de 23 de abril de 2013, promulga a seguinte lei:"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3" />
+
+                        <Label Text="Capítulo I DA FINALIDADE" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               FontSize="13"/>
+
+                        <Label Text="Art. 1º Fica criado no Município de Araraquara, junto à Secretaria Municipal de Meio Ambiente, o Fundo Municipal de Proteção à fauna - FUNPRO, que tem por objetivo o ﬁnanciamento, o investimento, a expansão e o aprimoramento contínuo das ações destinadas à promoção do bem-estar do animal, ao estímulo à posse responsável, ao controle da população de animais domésticos, à recuperação e proteção de habitats da fauna silvestre, ao apoio de atividades sob responsabilidade de cuidadores responsáveis e à implantação de medidas de prevenção de zoonoses e demais agravos.Art. 2º"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3" />
+
+                        <Label Text="Os recursos do Fundo Municipal de Proteção à Feuna des nam-se, precipuamente, ao:" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               FontSize="13"/>
+
+                        <Label Text="I - ﬁnanciamento e inves mentos em programas, projetos e ações relativas ao bem-estar, monitoramento e controle da fauna municipal;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+                        
+                        <Label Text="II - implantação e desenvolvimento de programas de controle populacional, que contemplem registro, identiﬁcação, recolhimento, manejo e destinação de animais domésticos;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+
+                        <Label Text="III - ﬁscalização e aplicação das normas municipais, estaduais e federais previstas em legislação de proteção e controle animal e aquelas relativas à criação, comercialização, propriedade, posse, guarda, uso, transporte, tráfego, e demais regulamentos municipais concernentes aos animais no Município;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+
+                        <Label Text="IV - apoio a programas, projetos e ações que visem defender, proteger, recuperar e garantir locais e habitats apropriados para a fauna doméstica e silvestre;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+
+                        <Label Text="V - apoio ao trabalho de controle de vetores, de forma a garantir a prevenção e a erradicação de zoonoses;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+
+                        <Label Text="VI - promover a educação e a conscientização;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+
+                        <Label Text="VII - informação e divulgação de ações, programas e projetos em desenvolvimento, as medidas preventivas e proﬁláticas e as normas, princípios e preceitos de bem-estar animal;"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+
+                        <Label Text="VIII - capacitar agentes, funcionários e proﬁssionais de pessoas jurídicas de direito público ou privado."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.3"/>
+                        
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="LEI Nº 827/12"
+             x:Class="MelhorAmigo.Paginas.Laws.Lei_Num_827_12">
+    <ContentPage.Content>
+        <StackLayout Margin="5,5,5,10" Padding="0,0,0,10">
+            <ScrollView>
+                <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
+                    <StackLayout Margin="2">
+                        <Label Text="LEI COMPLEMENTAR Nº 827, DE 10 DE JULHO DE 2012" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+
+                        <Label Text="Autógrafo nº 143/12 – Projeto de Lei Complementar nº 005/12" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+
+                        <Label Text="Autoria: Prefeitura Municipal de Araraquara" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+
+                        <Label Text="Institui a política municipal de proteção aos animais, que inclui a guarda responsável por parte do tutor, do cuidador ou do criador; a obrigatoriedade de identificação eletrônica (microchip) de todos os animais domésticos, disciplina as respectivas infrações no Município de Araraquara e dá outras providências."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8"
+                               FontAttributes="Bold"/>
+
+                        <Label Text="O Prefeito do Município de Araraquara, Estado de São Paulo, no exercício de suas atribuições legais, e de acordo com o que aprovou a Câmara Municipal, em sessão extraordinária de 05 de julho de 2012, promulga a seguinte lei complementar:"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+
+                        <Label Text="Art. 1º  Fica instituída a política de proteção aos animais domésticos que consiste em ações voltadas para a preservação e a garantia dos direitos dos animais; responsabilidade pela guarda por parte do tutor, cuidador ou criador; cadastro único por meio de identificação eletrônica; programas de controle reprodutivo dos animais; campanhas de adoção e campanhas educacionais voltadas à população."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8"/>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

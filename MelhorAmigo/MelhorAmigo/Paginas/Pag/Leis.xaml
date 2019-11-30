@@ -20,7 +20,7 @@
                         </Image>
                     </StackLayout>
 
-                    <ListView x:Name="ListaLeis" HasUnevenRows="True" SelectionMode="None">
+                    <ListView x:Name="ListaLeis" HasUnevenRows="True" SelectionMode="None" ItemTapped="ListaLeis_ItemTapped">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>

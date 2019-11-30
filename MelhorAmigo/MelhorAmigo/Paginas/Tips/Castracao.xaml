@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="CASTRAÇÃO"
              x:Class="MelhorAmigo.Paginas.Tips.Castracao">
     <ContentPage.Content>
         <StackLayout Margin="5,5,5,10" Padding="0,0,0,10">
