@@ -29,7 +29,7 @@
                                FontAttributes="Bold"
                                TextColor="Red"
                                FontSize="13"/>
-                        
+
                         <Label Text="DISPÕE SOBRE A CRIAÇÃO DO FUNDO MUNICIPAL DE PROTEÇÃO À FAUNA, E DÁ OUTRAS PROVIDÊNCIAS.O Prefeito do Município de Araraquara, Estado de São Paulo, no exercício de suas atribuições legais, e de acordo com que aprovou a Câmara Municipal, em sessão ordinária de 23 de abril de 2013, promulga a seguinte lei:"
                                LineBreakMode="WordWrap"
                                LineHeight="1.3" />
