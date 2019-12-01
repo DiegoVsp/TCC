@@ -7,10 +7,46 @@
              Title="LEI Nº 8716/16"
              x:Class="MelhorAmigo.Paginas.Laws.Lei_Num_8716_16">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="LEI 8716/16"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="5,5,5,10" Padding="0,0,0,10">
+            <ScrollView>
+                <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
+                    <StackLayout Margin="2">
+                        <Label Text="LEI COMPLEMENTAR Nº 877, DE 9 DE NOVEMBRO DE 2016" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+
+                        <Label Text="Projeto de Lei Complementar nº 10/16 – Autógrafo nº 203/16" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+
+                        <Label Text="Autoria: Prefeitura Municipal de Araraquara" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               FontSize="13"/>
+
+                        <Label Text="Acrescenta à Lei Complementar nº 18, de 22 de dezembro de 1997 – Código de Posturas do Município de Araraquara os arts. 79-A e 79-B, de modo a dispor sobre a proibição do emprego de animais para a condução de carga e dá outras providências."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8"
+                               FontAttributes="Bold"/>
+
+                        <Label Text="O Prefeito do Município de Araraquara, Estado de São Paulo, no exercício de suas atribuições legais, e de acordo com o que aprovou a Câmara Municipal, em sessão extraordinária de 05 de julho de 2012, promulga a seguinte lei complementar:"
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8" />
+
+                        <Label Text="Art. 1º  Fica instituída a política de proteção aos animais domésticos que consiste em ações voltadas para a preservação e a garantia dos direitos dos animais; responsabilidade pela guarda por parte do tutor, cuidador ou criador; cadastro único por meio de identificação eletrônica; programas de controle reprodutivo dos animais; campanhas de adoção e campanhas educacionais voltadas à população."
+                               LineBreakMode="WordWrap"
+                               LineHeight="1.8"/>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

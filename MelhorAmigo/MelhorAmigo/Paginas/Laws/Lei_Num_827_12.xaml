@@ -11,19 +11,35 @@
             <ScrollView>
                 <Frame CornerRadius="5" Margin="10,30,10,30" HasShadow="True" HorizontalOptions="Center" BackgroundColor="White">
                     <StackLayout Margin="2">
-                        <Label Text="LEI COMPLEMENTAR Nº 827, DE 10 DE JULHO DE 2012" 
+                        <Label Text="LEI COMPLEMENTAR Nº 827" 
                                VerticalOptions="Center" 
                                HorizontalOptions="Center"
                                FontAttributes="Bold"
                                TextColor="Red"
-                               FontSize="13"/>
+                               LineHeight="1.0"
+                               FontSize="15"/>
+                        <Label Text="DE 10 DE JULHO DE 2012" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               LineHeight="1.0"
+                               FontSize="15"/>
 
-                        <Label Text="Autógrafo nº 143/12 – Projeto de Lei Complementar nº 005/12" 
+                        <Label Text="Autógrafo nº 143/12" 
                                VerticalOptions="Center" 
                                HorizontalOptions="Center"
                                FontAttributes="Bold"
                                TextColor="Red"
-                               FontSize="13"/>
+                               LineHeight="1.0"
+                               FontSize="15"/>
+                        <Label Text=" Projeto de Lei Complementar nº 005/12" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red"
+                               LineHeight="1.0"
+                               FontSize="15"/>
 
                         <Label Text="Autoria: Prefeitura Municipal de Araraquara" 
                                VerticalOptions="Center" 
